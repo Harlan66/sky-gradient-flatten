@@ -1,0 +1,7 @@
+*.tif
+*.tiff
+*.jpg
+*_log.json
+__pycache__/
+.DS_Store
+!docs/*.jpg
