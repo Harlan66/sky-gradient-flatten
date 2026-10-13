@@ -6,9 +6,9 @@ Even out an uneven night-sky background — light-pollution glow, stacking seams
 
 General gradient tools (Siril background extraction, GraXpert, …) are built for pure deep-sky frames. With a skyline in the frame they either refuse to sample near the horizon or leave a dark ring and halos around buildings. This script uses your foreground mask, models the background from sky pixels only, and writes foreground pixels back bit-for-bit.
 
-![Before (top) / after (bottom)](docs/example_before_after.jpg)
+![Input / flatten_sky.py / final](docs/example_before_after.jpg)
 
-*Top: stacked + composited campus night sky (CUHK, Hong Kong, Bortle ~8). Bottom: after `flatten_sky.py` with default settings. Buildings are pixel-identical.*
+*CUHK campus, Hong Kong, Bortle ~8, 150 × 4 s stack. **1** Input: stacked + composited, uneven light-pollution glow. **2** `flatten_sky.py` with default settings — buildings pixel-identical to the input. **3** The author's final image, shown for reference: the sky was re-rendered from the linear stack (star-colour calibration, Milky Way–protected background) and then edited in Lightroom. Panel 3 is **not** the output of this script alone.*
 
 ## What it fixes
 
